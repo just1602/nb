@@ -1,0 +1,19 @@
+[package]
+name = "nota-bene"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "nb"
+path = "src/main.rs"
+
+[lib]
+name = "nb"
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1.0.98"
+chrono = { version = "0.4.40", features = ["serde"] }
+clap = { version = "4.5.37", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+toml = "0.8.21"
