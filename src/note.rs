@@ -43,6 +43,7 @@ pub struct FrontMatter<'fm> {
     pub created: NaiveDateTime,
     pub tags: HashSet<&'fm str>,
     pub links: HashSet<&'fm str>,
+    pub references: Vec<&'fm str>,
 }
 
 impl<'fm> FrontMatter<'_> {
@@ -52,6 +53,7 @@ impl<'fm> FrontMatter<'_> {
             created: Local::now().naive_local(),
             tags: HashSet::new(),
             links: HashSet::new(),
+            references: Vec::new(),
         }
     }
 
