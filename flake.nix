@@ -2,7 +2,7 @@
   description = "A simple note management CLI tool";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
