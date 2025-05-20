@@ -21,14 +21,14 @@ pub enum Commands {
 }
 
 #[derive(Parser)]
-#[command(name = "new", about = "Create a new note")]
+#[command(name = "new", alias = "n", about = "Create a new note")]
 pub struct New {
     pub title: String,
     // TODO: allow to pass tags to the new command
 }
 
 #[derive(Parser)]
-#[command(name = "move", about = "Move or rename a note")]
+#[command(name = "move", aliases = ["rn", "mv"], visible_alias = "rename", about = "Move or rename a note")]
 pub struct Move {
     src: PathBuf,
     dest: PathBuf,
