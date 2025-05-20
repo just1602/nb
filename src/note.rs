@@ -5,6 +5,7 @@ use std::{collections::HashSet, str::FromStr};
 use chrono::{Local, NaiveDateTime};
 use serde::{Deserialize, Serialize};
 
+#[derive(Serialize, Deserialize)]
 pub struct Note<'n> {
     pub frontmatter: FrontMatter<'n>,
     pub content: &'n str,
