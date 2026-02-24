@@ -13,7 +13,7 @@ path = "src/lib.rs"
 
 [dependencies]
 anyhow = "1.0.102"
-chrono = { version = "0.4.43", features = ["serde"] }
+chrono = { version = "0.4.44", features = ["serde"] }
 clap = { version = "4.5.60", features = ["derive"] }
 serde = { version = "1.0.228", features = ["derive"] }
 toml = "1.0.3"
